@@ -2,11 +2,11 @@ package com.airline;
 
 import java.util.ArrayList;
 
-public class flightManageRes {
+public class passengerFlightRes {
 	private String flag;
 	private int errCode;
 	private String errMsg;
-	private ArrayList<flight> flightList;
+	private ArrayList<ticket> ticketList;
 	
 	public String getFlag() {
 		return flag;
@@ -32,11 +32,11 @@ public class flightManageRes {
 		this.errMsg = msg;
 	}
 	
-	public ArrayList<flight> getFlights(){
-		return flightList;
+	public ArrayList<ticket> getTickets(){
+		return ticketList;
 	}
 	
-	public void setFlights(ArrayList<flight> flights) {
-		this.flightList = new ArrayList<flight>(flights);
+	public void setTickets(ArrayList<ticket> tickets) {
+		this.ticketList = new ArrayList<ticket>(tickets);
 	}
 }
